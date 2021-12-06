@@ -41,7 +41,7 @@ jobs:
         run: mvn -B clean verify -Psurefire-it
   deploy:
     runs-on: ubuntu-latest
-    name: Deploy JAR file to remote server
+    name: Deploy image fiel to hub.docker
     needs: [compile,test]
     steps:
       - uses: actions/checkout@v1
